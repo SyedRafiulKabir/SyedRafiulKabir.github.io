@@ -1,0 +1,194 @@
+.wrap {
+  min-height: 70vh;
+}
+
+.card {
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--panel) 70%, transparent);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.text {
+  margin: 6px 0 16px;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.row {
+  margin-top: 10px;
+}
+
+.sectionBlock {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 12px;
+  background: color-mix(in oklab, var(--bg) 35%, transparent);
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  color: var(--text-strong);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--text);
+  font-size: 12px;
+}
+
+.field input,
+.field textarea,
+.field select {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 9px 10px;
+  background: color-mix(in oklab, var(--bg) 80%, transparent);
+  color: var(--text-strong);
+  font-size: 13px;
+}
+
+.field textarea {
+  min-height: 92px;
+  resize: vertical;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+.uploadRow {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.uploadBox {
+  border: 1px dashed color-mix(in oklab, var(--accent) 35%, var(--border));
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--text-strong);
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--accent) 12%, transparent),
+    color-mix(in oklab, var(--panel) 65%, transparent)
+  );
+}
+
+.uploadBox small {
+  color: var(--text);
+  font-size: 11px;
+}
+
+.uploadBox input {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px;
+  background: color-mix(in oklab, var(--bg) 65%, transparent);
+  color: var(--text);
+}
+
+.itemCard {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px;
+  background: color-mix(in oklab, var(--bg) 25%, transparent);
+  margin-bottom: 8px;
+}
+
+.editor {
+  width: 100%;
+  min-height: 220px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text-strong);
+  background: color-mix(in oklab, var(--bg) 84%, transparent);
+}
+
+.actions {
+  margin-top: 4px;
+  display: inline-flex;
+  gap: 10px;
+}
+
+.button,
+.buttonGhost {
+  border-radius: 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.button {
+  color: var(--text-strong);
+  background: color-mix(in oklab, var(--panel) 95%, transparent);
+}
+
+.buttonGhost {
+  color: var(--text);
+  background: transparent;
+}
+
+.linkButton {
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.error {
+  margin-top: 8px;
+  color: #fda4af;
+  font-size: 12px;
+}
+
+.ok {
+  margin-top: 8px;
+  color: #86efac;
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .grid,
+  .uploadRow {
+    grid-template-columns: 1fr;
+  }
+}
+

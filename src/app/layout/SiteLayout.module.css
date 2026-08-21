@@ -1,0 +1,237 @@
+.shell {
+  min-height: 100svh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(10px);
+  background: color-mix(in oklab, var(--bg) 72%, transparent);
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 16px;
+  padding: 14px 18px;
+  align-items: center;
+}
+
+.brandWrap {
+  position: relative;
+}
+
+.brand {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.mark {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.markImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.name {
+  color: var(--text-strong);
+  font-weight: 650;
+  font-size: 14px;
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.role {
+  color: var(--text);
+  font-size: 12px;
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav {
+  display: inline-flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.navLink {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 13px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+.navLink:hover {
+  color: var(--text-strong);
+  border-color: var(--border);
+  background: color-mix(in oklab, var(--panel) 55%, transparent);
+}
+
+.actions {
+  display: inline-flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.downloadButton {
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--panel) 75%, transparent);
+  color: var(--text-strong);
+  border-radius: 12px;
+  padding: 9px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.downloadButton:hover {
+  background: color-mix(in oklab, var(--panel) 90%, transparent);
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  min-width: 140px;
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--bg) 95%, transparent);
+  border-radius: 12px;
+  padding: 6px;
+  z-index: 50;
+}
+
+.menuOpen {
+  display: grid;
+}
+
+.menuItem,
+.menuItemButton {
+  text-decoration: none;
+  color: var(--text-strong);
+  border-radius: 8px;
+  font-size: 13px;
+  padding: 8px 10px;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.menuItem:hover,
+.menuItemButton:hover {
+  background: color-mix(in oklab, var(--panel) 75%, transparent);
+}
+
+.main {
+  width: min(1120px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: 22px 0 40px;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 18px 0;
+  background: color-mix(in oklab, var(--bg) 88%, transparent);
+}
+
+.footerInner {
+  width: min(1120px, calc(100% - 36px));
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footerLeft {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--text);
+  font-size: 13px;
+}
+
+.footerName {
+  color: var(--text-strong);
+  font-weight: 650;
+}
+
+.dot {
+  opacity: 0.6;
+}
+
+.footerRight {
+  display: inline-flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.footerLink {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 13px;
+}
+.footerLink:hover {
+  color: var(--text-strong);
+}
+
+@media (max-width: 860px) {
+  .header {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      'brand actions'
+      'nav nav';
+  }
+  .brand {
+    grid-area: brand;
+  }
+  .nav {
+    grid-area: nav;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+  .actions {
+    grid-area: actions;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+  .downloadButton {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
+

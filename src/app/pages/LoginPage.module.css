@@ -1,0 +1,62 @@
+.wrap {
+  display: grid;
+  place-items: center;
+  min-height: 65vh;
+}
+
+.card {
+  width: min(480px, 100%);
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--panel) 70%, transparent);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.text {
+  margin: 6px 0 14px;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: var(--text-strong);
+}
+
+.input {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px;
+  background: color-mix(in oklab, var(--bg) 75%, transparent);
+  color: var(--text-strong);
+}
+
+.button {
+  margin-top: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: color-mix(in oklab, var(--panel) 95%, transparent);
+  color: var(--text-strong);
+  cursor: pointer;
+}
+
+.error {
+  margin-top: 8px;
+  color: #fda4af;
+  font-size: 12px;
+}
+
+.hint {
+  margin-top: 12px;
+  font-size: 12px;
+  color: var(--text);
+}
+

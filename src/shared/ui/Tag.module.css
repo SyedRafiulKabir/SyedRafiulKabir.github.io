@@ -1,0 +1,21 @@
+.base {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  font-size: 12px;
+  line-height: 1;
+  color: var(--text-strong);
+  background: color-mix(in oklab, var(--panel) 72%, transparent);
+}
+
+.muted {
+  color: var(--text);
+  background: color-mix(in oklab, var(--panel) 55%, transparent);
+}
+
+.default {
+  color: var(--text-strong);
+}
+

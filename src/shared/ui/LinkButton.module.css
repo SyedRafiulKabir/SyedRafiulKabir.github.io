@@ -1,0 +1,58 @@
+.base {
+  --btn-bg: transparent;
+  --btn-border: var(--border);
+  --btn-text: var(--text-strong);
+  --btn-hover: color-mix(in oklab, var(--panel) 70%, transparent);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--btn-border);
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1;
+  transition: transform 120ms ease, background 160ms ease, border-color 160ms ease;
+  user-select: none;
+}
+
+.base:hover {
+  background: var(--btn-hover);
+}
+
+.base:active {
+  transform: translateY(1px);
+}
+
+.base:focus-visible {
+  outline: 2px solid color-mix(in oklab, var(--accent) 60%, white);
+  outline-offset: 2px;
+}
+
+.inner {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.primary {
+  --btn-bg: linear-gradient(180deg, color-mix(in oklab, var(--accent) 55%, transparent), color-mix(in oklab, var(--accent-2) 35%, transparent));
+  --btn-border: color-mix(in oklab, var(--accent) 45%, var(--border));
+  --btn-hover: linear-gradient(180deg, color-mix(in oklab, var(--accent) 65%, transparent), color-mix(in oklab, var(--accent-2) 45%, transparent));
+}
+
+.secondary {
+  --btn-bg: color-mix(in oklab, var(--panel) 70%, transparent);
+  --btn-border: color-mix(in oklab, var(--border) 90%, var(--accent));
+  --btn-hover: color-mix(in oklab, var(--panel) 85%, transparent);
+}
+
+.ghost {
+  --btn-bg: transparent;
+  --btn-border: color-mix(in oklab, var(--border) 95%, transparent);
+  --btn-hover: color-mix(in oklab, var(--panel) 65%, transparent);
+}
+

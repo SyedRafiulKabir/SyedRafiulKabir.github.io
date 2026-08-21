@@ -1,0 +1,33 @@
+.card {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: color-mix(in oklab, var(--bg) 85%, transparent);
+  padding: 14px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.title {
+  color: var(--text-strong);
+  font-weight: 650;
+  font-size: 14px;
+}
+
+.right {
+  display: inline-flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.body {
+  color: var(--text);
+}
+
