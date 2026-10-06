@@ -1,7 +1,7 @@
 import { defaultPortfolioData } from '../../content/portfolioData'
 import type { PortfolioData } from '../../types/portfolio'
 
-const PORTFOLIO_DATA_KEY = 'portfolio-data-v2'
+const PORTFOLIO_DATA_KEY = 'portfolio-data-v3'
 const AUTH_KEY = 'portfolio-auth-v1'
 
 export function loadPortfolioData(): PortfolioData {
