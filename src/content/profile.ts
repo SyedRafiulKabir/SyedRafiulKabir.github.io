@@ -16,10 +16,10 @@ export type Profile = {
 
 export const profile: Profile = {
   name: 'Syed Rafiul Kabir',
-  role: 'Software Engineer (.NET | Angular | ERP Integration)',
-  location: 'Mirpur DOHS, Dhaka, Bangladesh',
+  role: 'Software Engineer (.NET | Optimizely CMS | nopCommerce)',
+  location: 'Dhaka, Bangladesh',
   summary:
-    'Software Engineer with 2+ years of experience building production-grade backend systems, enterprise integrations, and scalable web applications using ASP.NET Core, SQL Server, and Angular.',
+    'Software Engineer with 3+ years of experience building scalable backend systems and enterprise integrations in the .NET ecosystem. Specialized in ASP.NET Core, SQL Server, EPiServer/Optimizely CMS, and nopCommerce, with hands-on delivery of OAuth2, OData, and third-party API integrations for e-commerce, CMS, and ERP platforms. Proven ability to design maintainable architectures, optimize large datasets, and ship production-ready software in Agile, distributed teams.',
   contact: {
     email: 'mailto:rafiulkabir01.rucse@gmail.com',
     linkedin: 'https://www.linkedin.com/in/syedrafiulkabir/',

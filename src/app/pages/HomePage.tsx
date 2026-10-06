@@ -16,12 +16,13 @@ export function HomePage({ data }: { data: PortfolioData }) {
         <div className={styles.heroLeft}>
           <div className={styles.badges}>
             <span className={styles.badge}>.NET</span>
-            <span className={styles.badge}>Angular</span>
+            <span className={styles.badge}>Optimizely CMS</span>
+            <span className={styles.badge}>nopCommerce</span>
           </div>
 
           <h1 className={styles.title}>
-            Software Engineer (<span className={styles.em}>.NET</span> | <span className={styles.em}>Angular</span> |{' '}
-            <span className={styles.em}>ERP Integration</span>)
+            Software Engineer (<span className={styles.em}>.NET</span> | <span className={styles.em}>Optimizely CMS</span> |{' '}
+            <span className={styles.em}>nopCommerce</span>)
           </h1>
 
           <p className={styles.subtitle}>{profile.summary}</p>
@@ -73,29 +74,29 @@ export function HomePage({ data }: { data: PortfolioData }) {
         subtitle="Enterprise strengths that map directly to real-world product delivery."
       >
         <div className={styles.highlightsGrid}>
-          <Card title="2+ years in .NET ecosystem">
+          <Card title="3+ years in .NET ecosystem">
             <p className={styles.cardText}>
-              Delivered production systems using ASP.NET Core, SQL Server, and Angular across enterprise product teams.
+              Delivered scalable backend systems, enterprise integrations, and CMS/e-commerce platforms across distributed Agile teams.
             </p>
           </Card>
-          <Card title="nopCommerce plugin delivery">
+          <Card title="EPiServer / Optimizely CMS">
             <p className={styles.cardText}>
-              Built and maintained custom plugins and integrations for nopCommerce implementations in versions 4.60-4.90.
+              Built certification integrations, access-control gating, accessibility enhancements, and async API endpoints on enterprise CMS platforms.
             </p>
           </Card>
-          <Card title="ERP + API integrations">
+          <Card title="nopCommerce plugin architecture">
             <p className={styles.cardText}>
-              Integrated ERP and third-party services using OData and OAuth2 to support accounting and operations workflows.
+              Developed high-performance plugins (4.60–4.90) with custom model factories and view location expanders powering enterprise platforms.
             </p>
           </Card>
-          <Card title="SQL performance focus">
+          <Card title="Enterprise API integrations">
             <p className={styles.cardText}>
-              Optimized query-heavy backend paths and data synchronization workflows for stable production throughput.
+              Delivered OAuth2 (Xero), OData, Wolt Delivery, and Schneider API integrations connecting e-commerce, ERP, and accounting systems.
             </p>
           </Card>
-          <Card title="Azure and CI/CD delivery">
+          <Card title="Azure DevOps & SQL performance">
             <p className={styles.cardText}>
-              Worked with Azure-hosted environments and CI/CD pipelines to ship reliable updates with faster release cycles.
+              Resolved Azure DevOps CI/CD and App Service pipeline failures while optimizing batch processing pipelines and SQL queries.
             </p>
           </Card>
         </div>
@@ -105,23 +106,23 @@ export function HomePage({ data }: { data: PortfolioData }) {
         <div className={styles.strengthGrid}>
           <Card title="Backend engineering (.NET)">
             <ul className={styles.list}>
-              <li>ASP.NET Core, MVC, Entity Framework, Clean Architecture</li>
-              <li>Performance-focused data access (ADO.NET)</li>
-              <li>Secure API design, validation, reliability</li>
+              <li>ASP.NET Core, ASP.NET MVC, Web API, Clean Architecture</li>
+              <li>Batch processing pipelines & SQL query optimization</li>
+              <li>Secure API design, token persistence, error handling</li>
             </ul>
           </Card>
-          <Card title="Frontend delivery (Angular)">
+          <Card title="CMS & E-Commerce">
             <ul className={styles.list}>
-              <li>Angular / AngularJS with Kendo UI for enterprise admin systems</li>
-              <li>Data-heavy UI with component-driven workflows</li>
-              <li>Pragmatic UX + maintainable structure</li>
+              <li>EPiServer / Optimizely CMS 11 enterprise platform delivery</li>
+              <li>nopCommerce (4.60–4.90) custom plugins & architecture</li>
+              <li>Elasticsearch catalog search & scheduled sync tasks</li>
             </ul>
           </Card>
-          <Card title="Data + integrations">
+          <Card title="Data, Cloud & Integrations">
             <ul className={styles.list}>
-              <li>MS SQL Server + Oracle (reporting, migrations)</li>
-              <li>OAuth2, third-party APIs, schedulers</li>
-              <li>Search at scale with Elasticsearch</li>
+              <li>MS SQL Server, OracleDB, Entity Framework, FluentMigrator</li>
+              <li>OAuth2 (Xero), OData, Wolt Delivery, Schneider APIs</li>
+              <li>Azure App Service, Azure DevOps CI/CD pipelines, Git</li>
             </ul>
           </Card>
         </div>
@@ -232,6 +233,14 @@ export function HomePage({ data }: { data: PortfolioData }) {
                   •
                 </span>
                 <span>{e.year}</span>
+                {e.cgpa ? (
+                  <>
+                    <span className={styles.dot} aria-hidden="true">
+                      •
+                    </span>
+                    <span>CGPA: {e.cgpa}</span>
+                  </>
+                ) : null}
               </div>
             </Card>
           ))}
@@ -241,9 +250,9 @@ export function HomePage({ data }: { data: PortfolioData }) {
       <Section id="contact" title="Contact" subtitle="Fastest way to reach me is email.">
         <div className={styles.contactCard}>
           <div className={styles.contactLeft}>
-            <div className={styles.contactTitle}>Open to .NET and Angular opportunities.</div>
+            <div className={styles.contactTitle}>Open to .NET, CMS, and E-commerce opportunities.</div>
             <div className={styles.contactText}>
-              If you are hiring for backend-focused product teams or integration-heavy roles, feel free to reach out directly.
+              If you are hiring for backend-focused product teams, CMS/e-commerce platforms, or integration-heavy roles, feel free to reach out directly.
             </div>
           </div>
           <div className={styles.contactRight}>
@@ -261,14 +270,6 @@ export function HomePage({ data }: { data: PortfolioData }) {
             </LinkButton>
           </div>
         </div>
-      </Section>
-
-      <Section
-        id="insights"
-        title="Insights and case studies (coming soon)"
-        subtitle="This portfolio is structured to expand with technical write-ups, architecture notes, and delivery case studies."
-      >
-        <div className={styles.comingSoon}>Planned: engineering write-ups, architecture case studies, and production lessons learned.</div>
       </Section>
     </div>
   )

@@ -10,84 +10,96 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: 'Action Enterprise E-Commerce Platform',
-    workplace: 'Brain Station 23',
-    domainTags: ['NopCommerce', 'Integrations', 'Search'],
+    title: 'IIA Web Platform — EPiServer/Optimizely CMS 11',
+    workplace: 'Brain Station 23 PLC',
+    domainTags: ['Optimizely CMS', 'Enterprise CMS', 'Azure DevOps'],
+    tech: [
+      'C#',
+      'ASP.NET MVC',
+      'EPiServer CMS 11',
+      'MS SQL Server',
+      'Entity Framework',
+      'FluentMigrator',
+      'Azure App Service',
+      'Azure DevOps',
+      'REST APIs',
+      'Razor',
+      'jQuery',
+    ],
+    problem:
+      'The Institute of Internal Auditors (IIA) required robust backend features, certification integrations, and strict access gating on their enterprise CMS, along with resolving pipeline failures in an Agile environment.',
+    solution:
+      'Built backend CMS features including certification integrations and access-control gating, delivered accessibility enhancements and async API endpoints, and resolved Azure DevOps CI/CD and Azure App Service pipeline failures.',
+    impact:
+      'Strengthened platform reliability and code quality across CI/CD pipelines while ensuring secure and seamless certification access control for members.',
+  },
+  {
+    title: 'Intelisale — nopCommerce Integration',
+    workplace: 'Brain Station 23 PLC',
+    domainTags: ['nopCommerce', 'Omnichannel', 'B2B Sales'],
+    tech: ['ASP.NET Core', 'MVC / Razor', 'MS SQL Server', 'nopCommerce'],
+    problem:
+      'Digitalizing complex B2B sales processes required integrating Intelisale omnichannel platform with nopCommerce without degrading user responsiveness during heavy background calculations.',
+    solution:
+      'Engineered an integration between the Intelisale omnichannel platform and nopCommerce reflecting real-time inventory, logistics, and personalized shipping logic; re-engineered core services to run complex calculations asynchronously; developed adaptive synchronization logic.',
+    impact:
+      'Significantly improved real-time data reliability and latency while safeguarding front-end user experience during resource-heavy operations.',
+  },
+  {
+    title: 'Action Website — nopCommerce E-Commerce',
+    workplace: 'Brain Station 23 PLC',
+    domainTags: ['nopCommerce', 'Integrations', 'Search'],
     tech: [
       'ASP.NET Core',
-      'MVC / Razor',
-      'MS SQL',
+      'MS SQL Server',
+      'Razor / MVC',
       'Xero OAuth2',
       'Schneider API',
       'Elasticsearch',
       'Schedulers',
     ],
     problem:
-      'The platform required stable financial and inventory integrations while handling heavy catalog synchronization and search performance issues.',
+      'The e-commerce platform required stable accounting synchronization with Xero, fast product discovery across large catalogs, and automated supplier product updates.',
     solution:
-      'Built OAuth2-based Xero connectivity, Schneider product sync schedulers, Elasticsearch-driven search, and SQL migration/reporting pipelines within nopCommerce.',
+      'Implemented Xero OAuth2 flow with database token persistence and dynamic admin "Connect" state; integrated Elasticsearch to replace default search with scheduled bulk product updates; built Schneider product sync schedulers and monthly order reporting with automated email delivery.',
     impact:
-      'Delivered a more reliable integration-driven commerce workflow with improved data consistency, faster product discovery, and smoother recurring operations.',
+      'Delivered automated financial and supplier synchronization, drastically cut catalog search response times, and automated monthly reporting workflows.',
   },
   {
-    title: 'Intelisale',
-    workplace: 'Brain Station 23',
-    domainTags: ['NopCommerce', 'Performance', 'Background Jobs'],
-    tech: ['ASP.NET Core', 'MVC / Razor', 'MS SQL'],
+    title: 'AmTab — Design Resource Platform',
+    workplace: 'Brain Station 23 PLC',
+    domainTags: ['nopCommerce', 'Plugins', 'Performance'],
+    tech: ['ASP.NET Core', 'MS SQL Server', 'Razor / MVC'],
     problem:
-      'The e-commerce workflow experienced data delivery inconsistencies and unstable background processing under business-critical workloads.',
+      'Architectural bottlenecks in custom modules and heavy design-resource rendering engines caused system instability and slow rendering.',
     solution:
-      'Re-engineered core backend services, redesigned background job orchestration, and implemented adaptive business logic for external tool synchronization.',
+      'Architected a scalable plugin workflow for adding new design resources without disrupting core logic, resolved architectural bottlenecks, and optimized cross-layer dependency flow and rendering pipelines for data-heavy design assets.',
     impact:
-      'Improved platform stability for daily operations and enabled more dependable data flow across sales tooling and the commerce engine.',
+      'Improved system stability, enhanced maintainability with modular plugin architecture, and accelerated rendering performance for design-heavy assets.',
   },
   {
-    title: 'AmTab',
-    workplace: 'Brain Station 23',
-    domainTags: ['NopCommerce', 'Plugins', 'Performance'],
-    tech: ['ASP.NET Core', 'MVC / Razor', 'MS SQL'],
-    problem:
-      'Custom module bottlenecks and heavy design-resource rendering were impacting maintainability and user-facing responsiveness.',
-    solution:
-      'Designed scalable plugin workflows, refactored dependency boundaries, and optimized rendering/data-loading behavior for resource-heavy modules.',
-    impact:
-      'Delivered a cleaner architecture with stronger runtime stability and more efficient handling of complex design-resource workloads.',
-  },
-  {
-    title: 'Multitex ERP HR Module',
+    title: 'Multitex ERP — HR & Payroll Module',
     workplace: 'MultiTech Systems',
-    domainTags: ['ERP', 'HR Module', 'Reporting'],
-    tech: ['ASP.NET', 'AngularJS', 'RDLC', 'Oracle DB'],
+    domainTags: ['ERP', 'HR & Payroll', 'Reporting'],
+    tech: ['ASP.NET MVC', 'AngularJS', 'Oracle DB', 'RDLC'],
     problem:
-      'HR and payroll operations required accurate multi-shift calculations and reliable reporting over large historical Oracle datasets.',
+      'Apparel and manufacturing operations faced slow manual HR and payroll processing, with difficulties aggregating complex multi-shift and statutory compliance data over historical records.',
     solution:
-      'Built payroll and attendance automation logic, designed RDLC reporting workflows, and optimized Oracle query/retrieval pipelines for enterprise reporting.',
+      'Developed the HR and Payroll module covering multi-shift calculations and statutory compliance; built RDLC reports and Oracle DB data-retrieval workflows aggregating large datasets; optimized SQL queries and API processing.',
     impact:
-      'Enabled dependable HR processing and operational reporting for business teams while improving maintainability of critical ERP workflows.',
+      'Reduced manual processing time by an estimated ~35% and enabled dependable, real-time enterprise reporting over historical workforce data.',
   },
   {
-    title: 'MPU Financial Operations Platform',
-    workplace: 'Global Software Architects (GSA)',
-    domainTags: ['FinTech', 'Clean Architecture', 'Admin Dashboard'],
-    tech: ['ASP.NET Core', 'ADO.NET', 'Angular', 'Kendo UI', 'Clean Architecture'],
+    title: 'Vehicle Tracking & FinTech Modules',
+    workplace: 'Global Software Architects',
+    domainTags: ['OpenAI API', 'FinTech', 'Clean Architecture'],
+    tech: ['ASP.NET Core', 'Angular', 'OpenAI API', 'Kendo UI', 'Clean Architecture'],
     problem:
-      'The platform needed secure, maintainable handling of sensitive financial operations with performant data access and clear operational visibility.',
+      'Logistics and financial processing operations required intelligent real-time vehicle telemetry parsing and enhanced security/performance for FinTech data flows.',
     solution:
-      'Built a clean-architecture ASP.NET Core backend, optimized ADO.NET transactional access paths, and delivered an Angular + Kendo admin dashboard.',
+      'Developed intelligent vehicle tracking applications integrating OpenAI APIs for automated insights; improved security and performance of FinTech modules; refactored legacy modules using .NET Core and Angular.',
     impact:
-      'Improved long-term maintainability and operational confidence for financial workflows through secure API boundaries and production-ready admin tooling.',
-  },
-  {
-    title: 'Track Your Truck AI Assistant',
-    workplace: 'Global Software Architects (GSA)',
-    domainTags: ['AI-integrated', 'Real-time', 'Data processing'],
-    tech: ['Node.js', 'Angular', 'OpenAI API', 'JSON processing'],
-    problem:
-      'Operations teams needed a faster way to interpret high-volume real-time truck telemetry without manually parsing raw system data.',
-    solution:
-      'Engineered a Node.js ingestion pipeline, integrated OpenAI for contextual summarization, and built an Angular conversational interface for fleet queries.',
-    impact:
-      'Delivered a practical AI-assisted operational experience that made live logistics data easier to consume and act on in day-to-day workflows.',
+      'Enhanced system scalability, improved financial data processing reliability, and reduced manual overhead for fleet tracking operations.',
   },
 ]
 

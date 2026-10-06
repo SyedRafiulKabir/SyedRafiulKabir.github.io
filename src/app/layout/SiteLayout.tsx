@@ -73,9 +73,6 @@ export function SiteLayout({
             <a className={styles.navLink} href="#contact">
               Contact
             </a>
-            <a className={styles.navLink} href="#insights">
-              Insights
-            </a>
           </nav>
         ) : (
           <div />

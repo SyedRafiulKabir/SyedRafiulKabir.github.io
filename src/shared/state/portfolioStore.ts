@@ -1,7 +1,7 @@
 import { defaultPortfolioData } from '../../content/portfolioData'
 import type { PortfolioData } from '../../types/portfolio'
 
-const PORTFOLIO_DATA_KEY = 'portfolio-data-v1'
+const PORTFOLIO_DATA_KEY = 'portfolio-data-v2'
 const AUTH_KEY = 'portfolio-auth-v1'
 
 export function loadPortfolioData(): PortfolioData {
@@ -41,6 +41,7 @@ export function savePortfolioData(data: PortfolioData) {
 
 export function resetPortfolioData() {
   localStorage.removeItem(PORTFOLIO_DATA_KEY)
+  localStorage.removeItem('portfolio-data-v1')
 }
 
 export function isAuthenticated() {

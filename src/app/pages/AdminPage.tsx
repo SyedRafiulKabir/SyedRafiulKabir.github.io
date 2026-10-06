@@ -333,6 +333,9 @@ export function AdminPage({
                 <label className={styles.field}><span>Year</span><input value={edu.year} onChange={(e) => {
                   const next = [...draft.education]; next[i] = { ...next[i], year: e.target.value }; setDraft({ ...draft, education: next }); setJsonDraft(JSON.stringify({ ...draft, education: next }, null, 2))
                 }} /></label>
+                <label className={styles.field}><span>CGPA</span><input value={edu.cgpa ?? ''} onChange={(e) => {
+                  const next = [...draft.education]; next[i] = { ...next[i], cgpa: e.target.value || undefined }; setDraft({ ...draft, education: next }); setJsonDraft(JSON.stringify({ ...draft, education: next }, null, 2))
+                }} /></label>
               </div>
             </div>
           ))}

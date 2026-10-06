@@ -15,18 +15,19 @@ export const skillTiers: Record<SkillTier, { label: string; meter: number }> =
   }
 
 export const skills: Skill[] = [
-  { name: 'ASP.NET Core', tier: 'Primary' },
-  { name: '.NET / C#', tier: 'Primary' },
-  { name: 'Entity Framework', tier: 'Strong' },
+  { name: 'ASP.NET Core / C#', tier: 'Primary' },
+  { name: 'EPiServer / Optimizely CMS 11', tier: 'Primary' },
+  { name: 'nopCommerce (4.60–4.90)', tier: 'Primary' },
   { name: 'MS SQL Server', tier: 'Primary' },
+  { name: 'Entity Framework & LINQ', tier: 'Primary' },
+  { name: 'Clean Architecture & REST APIs', tier: 'Strong' },
+  { name: 'OAuth2 & Integrations (Xero, Wolt, OData)', tier: 'Strong' },
+  { name: 'Azure & Azure DevOps (CI/CD)', tier: 'Strong' },
   { name: 'Angular / AngularJS', tier: 'Strong' },
-  { name: 'Kendo UI', tier: 'Proficient' },
   { name: 'Oracle Database', tier: 'Strong' },
-  { name: 'RDLC Reports', tier: 'Proficient' },
-  { name: 'Microsoft Azure', tier: 'Proficient' },
   { name: 'Elasticsearch', tier: 'Proficient' },
-  { name: 'OAuth2 / API Integrations', tier: 'Proficient' },
-  { name: 'Node.js', tier: 'Proficient' },
+  { name: 'FluentMigrator & RDLC Reports', tier: 'Proficient' },
+  { name: 'Kendo UI, jQuery & Razor', tier: 'Proficient' },
+  { name: 'Git & GitHub / GitLab', tier: 'Strong' },
   { name: 'React', tier: 'Familiar' },
-  { name: 'Git', tier: 'Strong' },
 ]
