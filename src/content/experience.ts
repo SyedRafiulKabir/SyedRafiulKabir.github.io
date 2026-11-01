@@ -13,11 +13,12 @@ export const experience: ExperienceItem[] = [
     start: 'Oct 2025',
     end: 'Present',
     highlights: [
+      'Champion context-driven and spec-driven AI workflows, defining architectural specs and structured context to accelerate feature scaffolding, code reviews, and integration delivery with high precision.',
       'Deliver backend features on an enterprise EPiServer/Optimizely CMS 11 platform, including certification integrations, access gating, accessibility enhancements, and async API endpoints.',
-      'Resolve Azure DevOps CI/CD and Azure App Service pipeline failures, maintaining code quality within an Agile team.',
       'Develop high-performance plugins for nopCommerce (4.60–4.90) powering enterprise e-commerce platforms.',
       'Design and implement integrations with Xero Accounting (OAuth2), Wolt Delivery APIs, and ERP platforms via OData services.',
       'Improve data processing performance with batch processing pipelines and optimized SQL queries; architect modular UI and backend extensions using custom model factories and view location expanders.',
+      'Maintain CI/CD pipelines in Azure DevOps and ensure stability across Azure App Service deployments.',
     ],
   },
   {

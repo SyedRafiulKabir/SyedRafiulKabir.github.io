@@ -15,14 +15,17 @@ export function HomePage({ data }: { data: PortfolioData }) {
       <section className={styles.hero} aria-label="Intro">
         <div className={styles.heroLeft}>
           <div className={styles.badges}>
-            <span className={styles.badge}>.NET</span>
-            <span className={styles.badge}>Optimizely CMS</span>
-            <span className={styles.badge}>nopCommerce</span>
+            <span className={styles.badge}>nopCommerce (Primary)</span>
+            <span className={styles.badge}>AI-DLC &amp; Spec-Driven Dev</span>
+            <span className={styles.badge}>.NET Core &amp; C#</span>
+            <span className={styles.badge}>Optimizely CMS 11</span>
+            <span className={styles.badge}>Enterprise Integrations</span>
           </div>
 
           <h1 className={styles.title}>
-            Software Engineer (<span className={styles.em}>.NET</span> | <span className={styles.em}>Optimizely CMS</span> |{' '}
-            <span className={styles.em}>nopCommerce</span>)
+            Software Engineer (<span className={styles.em}>.NET Core</span> |{' '}
+            <span className={styles.em}>nopCommerce</span> |{' '}
+            <span className={styles.em}>AI-DLC</span>)
           </h1>
 
           <p className={styles.subtitle}>{profile.summary}</p>
@@ -71,58 +74,58 @@ export function HomePage({ data }: { data: PortfolioData }) {
       <Section
         id="highlights"
         title="Key highlights"
-        subtitle="Enterprise strengths that map directly to real-world product delivery."
+        subtitle="Core competencies across enterprise e-commerce, AI-driven development, and scalable .NET engineering."
       >
         <div className={styles.highlightsGrid}>
-          <Card title="3+ years in .NET ecosystem">
+          <Card title="nopCommerce & E-Commerce Core">
             <p className={styles.cardText}>
-              Delivered scalable backend systems, enterprise integrations, and CMS/e-commerce platforms across distributed Agile teams.
+              Primary specialization building high-performance plugins (4.60–4.90), custom view location expanders, model factories, and ERP/Xero/Wolt integrations.
             </p>
           </Card>
-          <Card title="EPiServer / Optimizely CMS">
+          <Card title="AI-DLC & Spec-Driven Velocity">
             <p className={styles.cardText}>
-              Built certification integrations, access-control gating, accessibility enhancements, and async API endpoints on enterprise CMS platforms.
+              Leading practitioner of AI-DLC (AI-Driven Software Development Life Cycle), guiding teams to adopt structured specifications, deep codebase context, and high-velocity workflows.
             </p>
           </Card>
-          <Card title="nopCommerce plugin architecture">
+          <Card title="Enterprise CMS (Optimizely / EPiServer)">
             <p className={styles.cardText}>
-              Developed high-performance plugins (4.60–4.90) with custom model factories and view location expanders powering enterprise platforms.
+              Delivered enterprise CMS platform features for the Institute of Internal Auditors (IIA), including certification integrations, access gating, and async endpoints.
             </p>
           </Card>
-          <Card title="Enterprise API integrations">
+          <Card title="Enterprise Integrations & Schedulers">
             <p className={styles.cardText}>
-              Delivered OAuth2 (Xero), OData, Wolt Delivery, and Schneider API integrations connecting e-commerce, ERP, and accounting systems.
+              Architected mission-critical integrations with Xero (OAuth2), Wolt Delivery APIs, Schneider bulk sync schedulers, and OData ERP data pipelines.
             </p>
           </Card>
-          <Card title="Azure DevOps & SQL performance">
+          <Card title="Senior-Track Technical Ownership">
             <p className={styles.cardText}>
-              Resolved Azure DevOps CI/CD and App Service pipeline failures while optimizing batch processing pipelines and SQL queries.
+              Demonstrating senior-level readiness through end-to-end architectural ownership, SQL query profiling, Azure DevOps CI/CD maintenance, and fail-safe designs.
             </p>
           </Card>
         </div>
       </Section>
 
-      <Section id="strengths" title="Core strengths" subtitle="What you can rely on me for in large, real-world systems.">
+      <Section id="strengths" title="Core strengths" subtitle="Full-spectrum engineering capability across e-commerce, AI-DLC enablement, and cloud backends.">
         <div className={styles.strengthGrid}>
-          <Card title="Backend engineering (.NET)">
+          <Card title="nopCommerce & Enterprise E-Commerce">
             <ul className={styles.list}>
-              <li>ASP.NET Core, ASP.NET MVC, Web API, Clean Architecture</li>
-              <li>Batch processing pipelines & SQL query optimization</li>
-              <li>Secure API design, token persistence, error handling</li>
+              <li>Custom plugin architecture across nopCommerce 4.60 to 4.90</li>
+              <li>Custom model factories, view location expanders &amp; modular UI</li>
+              <li>Elasticsearch catalog search &amp; bulk background product sync schedulers</li>
             </ul>
           </Card>
-          <Card title="CMS & E-Commerce">
+          <Card title="AI-DLC &amp; Spec-Driven Engineering (Team Catalyst)">
             <ul className={styles.list}>
-              <li>EPiServer / Optimizely CMS 11 enterprise platform delivery</li>
-              <li>nopCommerce (4.60–4.90) custom plugins & architecture</li>
-              <li>Elasticsearch catalog search & scheduled sync tasks</li>
+              <li>Introducing &amp; scaling AI-DLC practices for teams transitioning to AI workflows</li>
+              <li>Spec-Driven Development (SDD), prompt engineering &amp; context management</li>
+              <li>AI-assisted architectural design, schema modeling &amp; code reviews</li>
             </ul>
           </Card>
-          <Card title="Data, Cloud & Integrations">
+          <Card title="Backend, CMS &amp; Cloud Infrastructure">
             <ul className={styles.list}>
-              <li>MS SQL Server, OracleDB, Entity Framework, FluentMigrator</li>
-              <li>OAuth2 (Xero), OData, Wolt Delivery, Schneider APIs</li>
-              <li>Azure App Service, Azure DevOps CI/CD pipelines, Git</li>
+              <li>ASP.NET Core, ASP.NET MVC, Clean Architecture, Entity Framework, LINQ</li>
+              <li>EPiServer / Optimizely CMS 11 platform delivery &amp; access-control gating</li>
+              <li>Azure App Service, Azure DevOps CI/CD pipelines, MS SQL Server, OracleDB</li>
             </ul>
           </Card>
         </div>
@@ -250,9 +253,11 @@ export function HomePage({ data }: { data: PortfolioData }) {
       <Section id="contact" title="Contact" subtitle="Fastest way to reach me is email.">
         <div className={styles.contactCard}>
           <div className={styles.contactLeft}>
-            <div className={styles.contactTitle}>Open to .NET, CMS, and E-commerce opportunities.</div>
+            <div className={styles.contactTitle}>
+              Ready to Deliver High-Impact &amp; Drive AI-DLC Adoption
+            </div>
             <div className={styles.contactText}>
-              If you are hiring for backend-focused product teams, CMS/e-commerce platforms, or integration-heavy roles, feel free to reach out directly.
+              Whether you need an engineer to scale your nopCommerce / Optimizely platform or guide your team into modern AI-DLC and spec-driven development, let's connect.
             </div>
           </div>
           <div className={styles.contactRight}>
@@ -274,4 +279,3 @@ export function HomePage({ data }: { data: PortfolioData }) {
     </div>
   )
 }
-

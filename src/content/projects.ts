@@ -36,7 +36,7 @@ export const projects: Project[] = [
   {
     title: 'Intelisale — nopCommerce Integration',
     workplace: 'Brain Station 23 PLC',
-    domainTags: ['nopCommerce', 'Omnichannel', 'B2B Sales'],
+    domainTags: ['nopCommerce', 'Omnichannel Sync', 'B2B Integration'],
     tech: ['ASP.NET Core', 'MVC / Razor', 'MS SQL Server', 'nopCommerce'],
     problem:
       'Digitalizing complex B2B sales processes required integrating Intelisale omnichannel platform with nopCommerce without degrading user responsiveness during heavy background calculations.',
@@ -48,7 +48,7 @@ export const projects: Project[] = [
   {
     title: 'Action Website — nopCommerce E-Commerce',
     workplace: 'Brain Station 23 PLC',
-    domainTags: ['nopCommerce', 'Integrations', 'Search'],
+    domainTags: ['nopCommerce', 'Enterprise Integrations', 'OAuth2'],
     tech: [
       'ASP.NET Core',
       'MS SQL Server',
@@ -68,7 +68,7 @@ export const projects: Project[] = [
   {
     title: 'AmTab — Design Resource Platform',
     workplace: 'Brain Station 23 PLC',
-    domainTags: ['nopCommerce', 'Plugins', 'Performance'],
+    domainTags: ['nopCommerce', 'Modular Architecture', 'Performance'],
     tech: ['ASP.NET Core', 'MS SQL Server', 'Razor / MVC'],
     problem:
       'Architectural bottlenecks in custom modules and heavy design-resource rendering engines caused system instability and slow rendering.',
@@ -80,7 +80,7 @@ export const projects: Project[] = [
   {
     title: 'Multitex ERP — HR & Payroll Module',
     workplace: 'MultiTech Systems',
-    domainTags: ['ERP', 'HR & Payroll', 'Reporting'],
+    domainTags: ['ERP Integration', 'HR & Payroll', 'Enterprise Reporting'],
     tech: ['ASP.NET MVC', 'AngularJS', 'Oracle DB', 'RDLC'],
     problem:
       'Apparel and manufacturing operations faced slow manual HR and payroll processing, with difficulties aggregating complex multi-shift and statutory compliance data over historical records.',
@@ -92,7 +92,7 @@ export const projects: Project[] = [
   {
     title: 'Vehicle Tracking & FinTech Modules',
     workplace: 'Global Software Architects',
-    domainTags: ['OpenAI API', 'FinTech', 'Clean Architecture'],
+    domainTags: ['AI-Enabled', 'FinTech Delivery', 'Clean Architecture'],
     tech: ['ASP.NET Core', 'Angular', 'OpenAI API', 'Kendo UI', 'Clean Architecture'],
     problem:
       'Logistics and financial processing operations required intelligent real-time vehicle telemetry parsing and enhanced security/performance for FinTech data flows.',
@@ -102,4 +102,3 @@ export const projects: Project[] = [
       'Enhanced system scalability, improved financial data processing reliability, and reduced manual overhead for fleet tracking operations.',
   },
 ]
-

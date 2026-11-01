@@ -16,10 +16,10 @@ export type Profile = {
 
 export const profile: Profile = {
   name: 'Syed Rafiul Kabir',
-  role: 'Software Engineer (.NET | Optimizely CMS | nopCommerce)',
+  role: 'Software Engineer (.NET | nopCommerce | AI-DLC)',
   location: 'Dhaka, Bangladesh',
   summary:
-    'Software Engineer with 3+ years of experience building scalable backend systems and enterprise integrations in the .NET ecosystem. Specialized in ASP.NET Core, SQL Server, EPiServer/Optimizely CMS, and nopCommerce, with hands-on delivery of OAuth2, OData, and third-party API integrations for e-commerce, CMS, and ERP platforms. Proven ability to design maintainable architectures, optimize large datasets, and ship production-ready software in Agile, distributed teams.',
+    'Software Engineer with 3+ years of experience engineering high-performance e-commerce platforms, enterprise CMS solutions, and scalable backend integrations in the .NET ecosystem. Core expertise in nopCommerce (4.60–4.90) plugin architecture, ERP & accounting integrations, and EPiServer/Optimizely CMS 11 platforms. A leading practitioner of AI-enabled engineering and AI-DLC (AI-Driven Software Development Life Cycle)—leveraging spec-driven development (SDD), structured codebase context, and AI workflows to accelerate product delivery, elevate code quality, and help engineering teams successfully adopt and master modern AI-DLC practices.',
   contact: {
     email: 'mailto:rafiulkabir01.rucse@gmail.com',
     linkedin: 'https://www.linkedin.com/in/syedrafiulkabir/',

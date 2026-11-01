@@ -1,10 +1,17 @@
 import { defaultPortfolioData } from '../../content/portfolioData'
 import type { PortfolioData } from '../../types/portfolio'
 
-const PORTFOLIO_DATA_KEY = 'portfolio-data-v3'
+const PORTFOLIO_DATA_KEY = 'portfolio-data-v6'
 const AUTH_KEY = 'portfolio-auth-v1'
 
 export function loadPortfolioData(): PortfolioData {
+  // Purge legacy storage versions
+  ['portfolio-data-v1', 'portfolio-data-v2', 'portfolio-data-v3', 'portfolio-data-v4', 'portfolio-data-v5'].forEach((k) => {
+    if (localStorage.getItem(k)) {
+      localStorage.removeItem(k)
+    }
+  })
+
   const raw = localStorage.getItem(PORTFOLIO_DATA_KEY)
   if (!raw) return defaultPortfolioData
   try {
@@ -41,7 +48,9 @@ export function savePortfolioData(data: PortfolioData) {
 
 export function resetPortfolioData() {
   localStorage.removeItem(PORTFOLIO_DATA_KEY)
-  localStorage.removeItem('portfolio-data-v1')
+  ;['portfolio-data-v1', 'portfolio-data-v2', 'portfolio-data-v3', 'portfolio-data-v4', 'portfolio-data-v5'].forEach((k) => {
+    localStorage.removeItem(k)
+  })
 }
 
 export function isAuthenticated() {
@@ -51,4 +60,3 @@ export function isAuthenticated() {
 export function setAuthenticated(value: boolean) {
   sessionStorage.setItem(AUTH_KEY, value ? 'true' : 'false')
 }
-
